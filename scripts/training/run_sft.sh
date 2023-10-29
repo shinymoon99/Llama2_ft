@@ -7,16 +7,16 @@ lora_trainable="q_proj,v_proj,k_proj,o_proj,gate_proj,down_proj,up_proj"
 modules_to_save="embed_tokens,lm_head"
 lora_dropout=0.05
 
-pretrained_model=/seu_share/home/qiguilin/220224365/huawei/liyu_model/hw_table_markdown_pretrained_lora
-chinese_tokenizer_path=/seu_share/home/qiguilin/220224365/huawei/alpaca_tokenizer
-dataset_dir=/seu_share/home/qiguilin/220224365/huawei/instructions_train_new
+pretrained_model=../LLM/llama2-7b-zh-ict_pretrained
+chinese_tokenizer_path=../alpaca_tokenizer
+dataset_dir=../instructions_train_new
 per_device_train_batch_size=2
 per_device_eval_batch_size=2
 gradient_accumulation_steps=8
 max_seq_length=512
-output_dir=/seu_share/home/qiguilin/220224365/huawei/liyu_model/hw_table_markdown_sft_lora
-validation_file=/seu_share/home/qiguilin/220224365/huawei/instructions_valid_new/merged_valid_168.json
-data_cache_dir=/seu_share/home/qiguilin/220224365/huawei/hit_cache/llama-7b_lora
+output_dir=../LLM/llama2-7b-zh-ict_pretrained/fine_tuned_model
+validation_file=/dataset/LLM_fine_tune/ICTPE_dev.json
+data_cache_dir=../hit_cache/llama-7b_lora
 
 deepspeed_config_file=ds_zero2_no_offload.json
 
