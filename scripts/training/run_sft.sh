@@ -8,8 +8,8 @@ modules_to_save="embed_tokens,lm_head"
 lora_dropout=0.05
 
 pretrained_model=../LLM/llama2-7b-zh-ict_pretrained
-chinese_tokenizer_path=../alpaca_tokenizer
-dataset_dir=../instructions_train_new
+chinese_tokenizer_path=../LLM/llama2-7b-zh-ict_pretrained
+dataset_dir=/dataset/train
 per_device_train_batch_size=2
 per_device_eval_batch_size=2
 gradient_accumulation_steps=8
