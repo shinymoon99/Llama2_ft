@@ -49,7 +49,7 @@ for data in datas:
     text = data["text"]
     tag_span=convert_to_tag_span(data["node_list"])
     output_data = annotate_text_with_tags(text,tag_spans=tag_span)
-    output_dataset.append({"instruction":text,"input":text,"output":output_data})
+    output_dataset.append({"instruction":instruction,"input":text,"output":output_data})
 
 
 
