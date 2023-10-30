@@ -15,7 +15,7 @@ per_device_eval_batch_size=2
 gradient_accumulation_steps=8
 max_seq_length=512
 output_dir=/root/autodl-tmp/LLM/llama2-7b_pft
-validation_file=/root/autodl-tmp/Llama2_ft/ICTPE_dev.json
+validation_file=/root/autodl-tmp/dataset/LLM_fine_tune_SL/ICTPE_dev.json
 data_cache_dir=/root/autodl-tmp/hit_cache/llama-7b_lora
 
 deepspeed_config_file=ds_zero2_no_offload.json
