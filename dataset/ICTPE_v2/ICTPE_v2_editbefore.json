@@ -100,7 +100,7 @@
                 "type_id": "操作2"
             },
             {
-                "type": "operate",
+                "type": "status",
                 "text_span": "实现对匹配同一流分类的报文进行相同的处理",
                 "start": 161,
                 "end": 181,
@@ -2404,9 +2404,9 @@
             },
             {
                 "type": "operate",
-                "text_span": "使用 **undo map** 命令删除该MA和原VLAN的关联关系",
-                "start": 21,
-                "end": 55,
+                "text_span": "执行 **map** 命令将MA和另一个VLAN关联",
+                "start": 57,
+                "end": 85,
                 "type_id": "操作1"
             }
         ],
@@ -2448,8 +2448,8 @@
             {
                 "type": "operate",
                 "text_span": "执行本命令",
-                "start": 0,
-                "end": 5,
+                "start": 76,
+                "end": 81,
                 "type_id": "操作2"
             }
         ],

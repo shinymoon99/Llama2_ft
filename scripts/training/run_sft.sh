@@ -7,16 +7,16 @@ lora_trainable="q_proj,v_proj,k_proj,o_proj,gate_proj,down_proj,up_proj"
 modules_to_save="embed_tokens,lm_head"
 lora_dropout=0.05
 
-pretrained_model=../LLM/llama2-7b-zh-ict_pretrained
-chinese_tokenizer_path=../LLM/llama2-7b-zh-ict_pretrained
-dataset_dir=/dataset/train
+pretrained_model=/root/autodl-tmp/LLM/llama2-7b-zh-ict_pretrained
+chinese_tokenizer_path=/root/autodl-tmp/LLM/llama2-7b-zh-ict_pretrained
+dataset_dir=/root/autodl-tmp/Llama2_ft/dataset/train
 per_device_train_batch_size=2
 per_device_eval_batch_size=2
 gradient_accumulation_steps=8
 max_seq_length=512
-output_dir=../LLM/llama2-7b-zh-ict_pretrained/fine_tuned_model
-validation_file=/dataset/LLM_fine_tune/ICTPE_dev.json
-data_cache_dir=../hit_cache/llama-7b_lora
+output_dir=/root/autodl-tmp/LLM/llama2-7b_pft
+validation_file=/root/autodl-tmp/Llama2_ft/ICTPE_dev.json
+data_cache_dir=/root/autodl-tmp/hit_cache/llama-7b_lora
 
 deepspeed_config_file=ds_zero2_no_offload.json
 
