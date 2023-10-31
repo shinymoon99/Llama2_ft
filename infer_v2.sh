@@ -1,7 +1,7 @@
 path_to_original_llama_2_hf_dir="/root/autodl-tmp/LLM/llama2-7b-zh-ict_pretrained"
 path_to_chinese_llama2_or_alpaca2_lora="/root/autodl-tmp/LLM/llama2-7b_pft/sft_lora_model"
-path_to_predictions="/root/autodl-tmp/LLAMA2_FT/output/predictions.json"
-path_to_input_data="/root/autodl-tmp/LLAMA2_FT/dataset/LLM_infer/input.txt"
+path_to_predictions="/root/autodl-tmp/Llama2_ft/output/predictions.json"
+path_to_input_data="/root/autodl-tmp/Llama2_ft/dataset/LLM_infer/input.txt"
 gpus="0"
 
 python scripts/inference/inference_hf.py \
