@@ -14,7 +14,7 @@ per_device_train_batch_size=1
 per_device_eval_batch_size=2
 gradient_accumulation_steps=8
 max_seq_length=512
-output_dir=/root/autodl-tmp/LLM/llama2-7b_pft
+output_dir=/root/autodl-tmp/LLM/llama2-7b_ft_EE
 validation_file=/root/autodl-tmp/Llama2_ft/dataset/LLM_fine_tune_EE/eval.json
 data_cache_dir=/root/autodl-tmp/hit_cache/llama-7b_lora
 
