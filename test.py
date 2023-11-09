@@ -1,5 +1,5 @@
 import re
-pattern = "<([?*])>"
+pattern = r"<(.+?)>"
 s = "<操作><条件>"
 results = re.finditer(pattern,s)
 for r in re.finditer(pattern,s):

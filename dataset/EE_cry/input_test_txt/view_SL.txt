@@ -1,0 +1,5 @@
+查看Stack-Port端口的事件信息
+查看Eth-Trunk接口故障原因
+查看设备本次以及下次启动的配置文件名
+查看接口GE0/0/1下的IP报文检查功能的配置信息。
+在Switch_1上查看VLANIF10接口的ARP表项，可以看到VLANIF10接口的IP地址对应的MAC地址。

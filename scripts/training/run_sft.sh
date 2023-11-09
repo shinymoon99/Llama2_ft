@@ -9,7 +9,7 @@ lora_dropout=0.05
 
 pretrained_model=/root/autodl-tmp/LLM/llama2-7b-zh-ict_pretrained
 chinese_tokenizer_path=/root/autodl-tmp/LLM/llama2-7b-zh-ict_pretrained
-dataset_dir=/root/autodl-tmp/Llama2_ft/dataset/train
+dataset_dir=/root/autodl-tmp/Llama2_ft/dataset/LLM_fine_tune_EE/train
 per_device_train_batch_size=2
 per_device_eval_batch_size=2
 gradient_accumulation_steps=8
